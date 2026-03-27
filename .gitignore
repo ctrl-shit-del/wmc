@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.env
+.venv
+beam_drl_env/
+
+# PyTorch — checkpoints are tracked (they're only 1.4 MB)
+# If they grow >100MB later, switch to Git LFS
+# *.pt
+# *.pth
+
+# NS-3 build artifacts (DO NOT commit these — gigabytes)
+*.o
+*.a
+*.so
+*.d
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake-build-*/
+
+# NS-3 output files
+*.pcap
+*.tr
+*.xml
+FlowMonitor*.xml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Logs (optional — comment out if you want logs tracked)
+# logs/*.txt
+# Keep CSVs (they are your results data)
+
+# Large outputs
+*.mp4
+*.avi

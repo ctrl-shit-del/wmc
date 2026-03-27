@@ -1,0 +1,10 @@
+{
+  "baseline_sinr_mean": 85.94256000000001,
+  "baseline_sinr_ci": 8.41172670484987,
+  "drl_sinr_mean": 85.89732707368422,
+  "drl_sinr_ci": 8.407299480268374,
+  "gain_pct": -0.05263157894736982,
+  "t_stat": -0.010559853966473513,
+  "p_value": 0.9918332004424412,
+  "significant": false
+}
