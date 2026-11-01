@@ -1,0 +1,53 @@
+{
+  "channel": {
+    "carrier_freq_ghz": 28,
+    "channel_model": "3GPP_TR38901_UMi",
+    "spatial_consistency": true,
+    "dynamic_blockage": true,
+    "blocker_density": 0.2,
+    "meas_noise_sigma_db": 2.0,
+    "rsrp_feedback_delay_tti": 2
+  },
+  "topology": {
+    "cell_radius_m": 200,
+    "gnb_height_m": 10,
+    "ue_height_m": 1.5,
+    "num_ue": 5,
+    "ue_speed_mps": 1.5
+  },
+  "codebook": {
+    "num_beams": 32,
+    "action_mask_k": 8
+  },
+  "drl": {
+    "state_dim": 48,
+    "hidden_layers": [
+      512,
+      256,
+      128
+    ],
+    "learning_rate": 5e-05,
+    "gamma": 0.95,
+    "buffer_capacity": 100000,
+    "batch_size": 64,
+    "target_update_tau": 0.005,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.01,
+    "adaptive_decay": true,
+    "training_episodes": 2000,
+    "checkpoint_interval": 200
+  },
+  "reward": {
+    "w1": 1.0,
+    "w2": 0.5,
+    "w3": 2.0,
+    "outage_threshold_db": -5.0
+  },
+  "evaluation": {
+    "num_eval_seeds": 15
+  },
+  "ns3ai": {
+    "watchdog_timeout_ms": 4.0,
+    "max_inference_ms": 3.0
+  }
+}
